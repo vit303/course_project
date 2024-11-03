@@ -8,6 +8,7 @@ class RegisterPage extends StatelessWidget{
   //email and pw controller
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _pwController = TextEditingController();
+  final TextEditingController _pwConfirmController = TextEditingController();
 
   //final void Function()? onTap;
 
@@ -67,7 +68,10 @@ class RegisterPage extends StatelessWidget{
             hintText: "Login",
             obscureText: false,
             controller: _emailController,
-          ),
+            style: TextStyle(
+              color: Colors.black, // Установите нужный цвет текста
+              ),
+            ),
 
           const SizedBox(height: 10),
 
@@ -84,7 +88,7 @@ class RegisterPage extends StatelessWidget{
           LoginTextField(
             hintText: "Сonfirm the password",
             obscureText: true,
-            controller: _pwController,
+            controller: _pwConfirmController,
           ),
 
 

@@ -5,13 +5,15 @@ class LoginTextField extends StatelessWidget{
   final bool obscureText;
   final TextEditingController controller;
   final FocusNode? focusNode;
-  const LoginTextField({
-    super.key, 
+  final TextStyle? style;
+const LoginTextField({
+    super.key,
     required this.hintText,
     required this.obscureText,
     required this.controller,
-    this.focusNode
-    });
+    this.style, this.focusNode,
+  });
+
 
   @override
   Widget build(BuildContext context) {
@@ -19,6 +21,7 @@ class LoginTextField extends StatelessWidget{
       padding: const EdgeInsets.symmetric(horizontal: 25.0),
       child: TextField(
         obscureText: obscureText,
+        style: TextStyle(color: Colors.black),
         controller: controller,
         focusNode: focusNode,
         decoration: InputDecoration(
