@@ -3,11 +3,13 @@ import 'package:course_project/components/login_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:course_project/pages/register_page.dart';
 
+
 class LoginPage extends StatelessWidget{
 
   //email and pw controller
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _pwController = TextEditingController();
+  
 
   //final void Function()? onTap;
 
